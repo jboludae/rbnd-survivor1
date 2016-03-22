@@ -1,0 +1,12 @@
+How does your gem take advantage of Ruby’s metaprogramming capabilities?
+I used the class_eval method to programmatically create 9 different
+methods from a hash of colors
+
+How long did you spend working on this project?
+About 6-7 hours
+
+What was the most rewarding challenge you conquered?
+Making "self" point to the instance instead of the class. I spent many hours on this only to realize that instead of `+self+`, which points to the instance, I was using `#{self}` which interpolates self at the moment the function self.create_colors is created. Which point to the string class.
+
+Where do you still have room to grow?
+I used only class_eval and felt good. I think to really master metaprogramming I would need more practice and to expand my knowledge about other methods: instance_eval, method_missing, send, etc.
